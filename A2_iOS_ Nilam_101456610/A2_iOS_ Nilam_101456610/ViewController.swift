@@ -93,7 +93,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
         let context = PersistenceController.shared.container.viewContext
         do {
-            fetchedResultsController = try NSFetchedResultsController(fetchRequest: fetchRequest,
+            fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest,
                                                                    managedObjectContext: context,
                                                                    sectionNameKeyPath: nil,
                                                                    cacheName: nil)
