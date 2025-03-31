@@ -31,7 +31,7 @@ class AddProductViewController: UIViewController {
         let newProduct = Product(context: context)
         newProduct.productName = name
         newProduct.productDescription = description
-        newProduct.productPrice = price
+        newProduct.productPrice = NSDecimalNumber(decimal: price)
         newProduct.productProvider = provider
         newProduct.productID = Int64(Date().timeIntervalSince1970) // Example to generate a unique product ID
 
